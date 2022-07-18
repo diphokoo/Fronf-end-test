@@ -1,11 +1,20 @@
 //Variables
 
-$content-width: 1530px;
-$nav-height: 70px;
-$hPadding: 20px;
+$content-width: 95.63rem;
+$nav-height: 4.38rem;
+$hPadding: 1.25rem;
 $fontSize:1.2em;
 $logo: #E6007E;
+$aPadding: 0.63rem 1.25rem 0 1.25rem;
+$aColor: #1C4961;
+$btnColor:white;
+$nav-background:#fff;
+$breakpoint: 50rem;
 
+
+.company-logo{
+    float: left;
+}
 .navigation {
     height: $nav-height;
 }
@@ -15,14 +24,57 @@ $logo: #E6007E;
     margin: 0 auto;
 }
 
-.brand {
-    position: absolute;
-    padding-left: $hPadding;
-    float: left;
-    line-height: $nav-height;
-    font-size: 1.25rem;
-}
-
 .logo{
     color: $logo;
+}
+
+nav {
+    float: right;
+    padding-top: 1.25rem;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            float: left;
+            position:relative
+        }
+        a {
+            display: block;
+            padding:$aPadding;
+            color: $aColor;
+            text-decoration: none;
+
+            &:not(:only-child):after {
+                padding: 0.25rem;
+                content: ' ▾';
+            }
+        } //downlist
+        ul li {
+            min-width: 11.88rem;
+            a {
+                padding: 0.94rem;
+                line-height: 1.3rem;
+            }
+        
+        }
+    }
+}
+
+a.btn {
+    background-color: $logo;
+    /* border: 5px; */
+    border-radius: 5px;
+    padding: 5px;
+    color: $btnColor;
+}
+
+.nav-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: $nav-background;
+    height: $nav-height;
+    width: $nav-height;
 }
