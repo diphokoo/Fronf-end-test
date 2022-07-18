@@ -64,3 +64,75 @@ a.btn {
   height: 4.38rem;
   width: 4.38rem;
 }
+
+@media only screen and (max-width: 50rem) {
+  .nav-mobile {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    padding: 4.38rem 0 0.94rem;
+  }
+
+  ul {
+    display: none;
+  }
+  ul li {
+    float: none;
+  }
+  ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+  ul li a:hover::before {
+    width: 20%;
+  }
+  ul li ul li a {
+    padding-left: 30px;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #E6007E;
+  position: absolute;
+  display: block;
+  content: "";
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span::after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 50rem) {
+  .nav-list {
+    display: block !important;
+  }
+}
