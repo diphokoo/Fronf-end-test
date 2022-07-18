@@ -15,3 +15,6 @@ export default {
   }
 }
 </script>
+<style>
+  @import './sass/main.css';
+</style>
