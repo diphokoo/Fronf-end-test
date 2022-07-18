@@ -1,0 +1,28 @@
+//Variables
+
+$content-width: 1530px;
+$nav-height: 70px;
+$hPadding: 20px;
+$fontSize:1.2em;
+$logo: #E6007E;
+
+.navigation {
+    height: $nav-height;
+}
+
+.nav-container {
+    max-width: $content-width;
+    margin: 0 auto;
+}
+
+.brand {
+    position: absolute;
+    padding-left: $hPadding;
+    float: left;
+    line-height: $nav-height;
+    font-size: 1.25rem;
+}
+
+.logo{
+    color: $logo;
+}

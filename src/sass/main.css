@@ -1,3 +1,25 @@
+.navigation {
+  height: 70px;
+}
+
+.nav-container {
+  max-width: 1530px;
+  margin: 0 auto;
+}
+
+.brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: 70px;
+  font-size: 1.25rem;
+}
+
+.logo {
+  color: #E6007E;
+}
+
 body {
   margin: 0 66px 0 77px;
+  font-family: "Poppins";
 }/*# sourceMappingURL=main.css.map */
