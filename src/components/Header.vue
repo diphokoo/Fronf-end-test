@@ -1,7 +1,7 @@
 <template>
     <header>
         <div class="container">
-        
+            <img class="headerImg" src="./assets/header.png" />
         </div>
     </header>
 </template>
@@ -15,7 +15,6 @@ export default {
             buttonOne: 'Button One',
             buttonTwo: 'Button Two',
             btnText: 'Lorem Ipsum Dolor Sit',
-            pictire: '/src/assets/header.png',
         }
     }
 }
