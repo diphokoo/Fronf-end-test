@@ -69,10 +69,12 @@ a.btn {
   .nav-mobile {
     display: block;
   }
+
   nav {
     width: 100%;
     padding: 4.38rem 0 0.94rem;
   }
+
   ul {
     display: none;
   }
@@ -145,17 +147,7 @@ img.headerImg {
 
 .centered {
   position: absolute;
-  text-align: center;
-  left: 685px;
-  top: 232px;
-  width: 489px;
-  height: 50px;
-  font-family: "montserrat";
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
 }
-
-p.headerText {
-  margin-top: -15px;
-  width: 88%;
-}/*# sourceMappingURL=main.css.map */
